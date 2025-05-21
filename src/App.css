@@ -1,0 +1,70 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* 計算機標題 */
+.title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* 置中計算機本體 */
+.center-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* 計算機本體樣式 */
+.calculator {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 顯示區 */
+.display {
+  background: #222;
+  color: #0f0;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.expression {
+  min-height: 24px;
+}
+
+.result {
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+/* 按鈕 */
+.button-pad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.button {
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
