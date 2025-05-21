@@ -17,7 +17,7 @@ function MyCalculator() {
                 const evalResult = eval(expression.replace(/×/g, "*").replace(/÷/g, "/"));
                 setResult(evalResult);
             } catch {
-                setResult("錯誤");
+                setResult("錯誤!");
             }
         } else {
             setExpression(expression + value);
